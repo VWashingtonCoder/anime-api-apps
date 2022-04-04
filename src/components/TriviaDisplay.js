@@ -1,28 +1,29 @@
 import React from "react";
 import { connect } from "react-redux"
+import { TriviaDisplayStyled } from "../styles/TriviaStyled";
 
 export function TriviaDisplay(props){
     const { current, factNumber, showImage, triviaFacts } = props
     console.log(props)
     return(
-        <div className="trivia-display">
+        <TriviaDisplayStyled>
             <div className="display-header"> 
-                <h3>{current}</h3>
-                <img src={showImage} alt='anime-image' />
-                <p>Total Fact #: {factNumber}</p>
+                <h3>{current} --- Total Fact #: {factNumber}</h3>
             </div>
-            <ol className="trivia-facts">
-                {triviaFacts.map(fact =>{
-                    console.log(fact)
-                    return(
-                        <>
-                            <li id={fact.fact_id}>{fact.fact}</li>
-                        </>
-                    )
-                })}
-            </ol>
-
-        </div>
+            <div className="fact-container">
+                <ol className="trivia-facts">
+                    {triviaFacts.map(fact =>{
+                        console.log(fact)
+                        return(
+                            <>
+                                <li id={fact.fact_id}>{fact.fact}</li><br/>
+                            </>
+                        )
+                    })}
+                </ol>
+                <img src={showImage} alt='anime-show' />
+            </div>
+        </TriviaDisplayStyled>
     )
     
 }

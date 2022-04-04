@@ -2,8 +2,7 @@ import styled from "styled-components"
 
 
 const QuoteStyled = styled.div`
-    font-family: 'Grape Nuts', cursive;
-    background-color: black;
+    font-family: 'Cormorant Garamond', serif;
     color: hotpink;
 
     .quote-header{

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { getTrivia } from '../state/reducer';
 import { connect } from 'react-redux'
 import TriviaDisplay from './TriviaDisplay';
+import { TriviaListStyled } from '../styles/TriviaStyled'
 
 const animelist = [
     { 
@@ -69,42 +70,54 @@ const animelist = [
 export function TriviaList(props) {
     const { getTrivia, factNumber } = props
     const [currentAnime, setCurrAnime] = useState('')
+    const [displayList, setDisplayList] = useState(false)
 
+    const toggleAnimeList  = evt => {
+        evt.preventDefault()
+        setDisplayList(!displayList)
+    }
     const selectShow = evt => {
         const urlKey = evt.target.id
         const title = evt.target.innerText
         getTrivia(urlKey)
         setCurrAnime(title)
+        setDisplayList(false)
     }
+    
+
 
     return (
-        <div className='trivia-list'>
+        <TriviaListStyled>
             <div className='trivia-header'>
                 <h2>Anime Trivia</h2>
                 <p>
-                    Come discover some cool trivia facts abiut some of your favorite shows! 
+                    Come discover some cool trivia facts about<br/>some of your favorite shows! 
                 </p>
             </div>
-            <div className='anime-list'>
-                {animelist.map(anime => {
-                    return(
-                        <>
-                            <div 
-                                key={anime.id}
-                                id={anime.urlKey}
-                                onClick={selectShow}
-                            >
-                                {anime.name}
-                            </div>
-                        </>
-                    )
-                })}
-            </div>
+            {displayList ? 
+                <div className='anime-list'>
+                    <button onClick={toggleAnimeList}>Hide Anime List</button>
+                    {animelist.map(anime => {
+                        return(
+                            <>
+                                <div 
+                                    key={anime.id}
+                                    id={anime.urlKey}
+                                    onClick={selectShow}
+                                >
+                                    {anime.name}
+                                </div>
+                            </>
+                        )
+                    })}
+                </div>
+                : <button onClick={toggleAnimeList}>Display Anime List</button>
+            }
             {factNumber === 0 
-                ? <h3>Pick A Anime To See Some Awesome Trivia</h3>
+                ? <h3>Pick A Anime Above To See Some Awesome Trivia</h3>
                 : <TriviaDisplay current={currentAnime}/>
             }
-        </div>
+        </TriviaListStyled>
     )
 }
 
