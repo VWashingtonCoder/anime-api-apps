@@ -6,8 +6,6 @@ import ImgGenStyled from '../styles/ImgGenStyled';
 export function ImgGenerator(props) {
     const [category, setCategory] = useState('cuddle')
     const { getNewImg, imageURL } = props
-    
-    console.log(imageURL)
 
     const pickCategory = evt => {
         const value = evt.target.value
@@ -24,7 +22,7 @@ export function ImgGenerator(props) {
             <div className='img-header'>
                 <h2>Generate An Image: Otaku Style</h2>
                 <p>
-                    In our image generator below, you'll find many random anime pics to put a smile on your face.<br/>Just pic a category and get 'animage'
+                    In our image generator below, you'll find many random anime pics to put a smile on your face.<br/>Just pic a category and get 'animage'!
                 </p>
             </div>
             
@@ -45,7 +43,7 @@ export function ImgGenerator(props) {
                     <option value='happy'>Happy</option>
                     <option value='blush'>Blush</option>
                 </select>
-                <button onClick={generateImg}>Generate An Image</button>
+                <button onClick={generateImg}>Gene📷rate</button>
             </div>
 
             <div className='img-container'>

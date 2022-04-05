@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css"
-import { NavLink, Routes, Route } from "react-router-dom"
+import { NavLink, Routes, Route, useNavigate } from "react-router-dom"
+import Home from "./components/Home";
 import Quotes from "./components/Quotes.js"
 import ImgGenerator from "./components/ImgGenerator";
 import TriviaList from "./components/TriviaList";
@@ -12,9 +13,19 @@ function App() {
         <h1>Andre's Anime Apps</h1>
         
         <nav className="navigation">
+          <NavLink
+            id="home" 
+            to="/"
+            style={({ isActive }) => ({
+              color: isActive ? 'blueviolet' : 'deepskyblue'
+            })}
+          >
+            Home
+          </NavLink>
+
           <NavLink 
             id='quotes' 
-            to="/"
+            to="/quotes"
             style={({ isActive }) => ({
               color: isActive ? 'blueviolet' : 'deepskyblue'
             })}
@@ -50,8 +61,11 @@ function App() {
         <Route path="/img-generator" 
           element={<ImgGenerator />}
         />
-        <Route path="/" 
+        <Route path="/quotes" 
           element={<Quotes />}
+        />
+        <Route path="/" 
+          element={<Home />}
         />
       </Routes>
     </div>

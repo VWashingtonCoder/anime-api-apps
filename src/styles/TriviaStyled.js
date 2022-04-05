@@ -25,7 +25,6 @@ export const TriviaListStyled = styled.div`
 `
 
 export const TriviaDisplayStyled = styled.div`
-    margin: 0 75px;
     line-height: 30px;
     font-size: 20px;
     .fact-container{
@@ -37,9 +36,10 @@ export const TriviaDisplayStyled = styled.div`
         display: flex;
         flex-flow: column;
         justify-content: space-evenly;
+        width: 45%
     }
     img{
-        width: 60%
+        width: 48%
     }
 `
 

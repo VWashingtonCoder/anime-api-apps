@@ -23,7 +23,7 @@ const animelist = [
     { 
         id: 4, 
         name: 'Demon Slayer', 
-        urlKey: '' 
+        urlKey: 'demon_slayer' 
     },
     { 
         id: 5, 

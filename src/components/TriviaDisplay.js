@@ -4,7 +4,7 @@ import { TriviaDisplayStyled } from "../styles/TriviaStyled";
 
 export function TriviaDisplay(props){
     const { current, factNumber, showImage, triviaFacts } = props
-    console.log(props)
+    
     return(
         <TriviaDisplayStyled>
             <div className="display-header"> 
@@ -13,7 +13,6 @@ export function TriviaDisplay(props){
             <div className="fact-container">
                 <ol className="trivia-facts">
                     {triviaFacts.map(fact =>{
-                        console.log(fact)
                         return(
                             <>
                                 <li id={fact.fact_id}>{fact.fact}</li><br/>
