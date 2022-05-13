@@ -112,7 +112,7 @@ const StyledHome = styled.div`
         }
     }
 
-    @media (max-width: 400px) {
+    @media (max-width: 500px) {
         .header {
             display: flex;
             flex-flow: column;
