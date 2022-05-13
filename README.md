@@ -34,8 +34,6 @@ Anime apps built around anime APIs utilizing create-react-app
 
 ## Status
 * Needs media viewport editing
-    - Quote App
-    - Image Generator
     - Trivia Facts
 * Deployed to Vercel
     - anime-api-apps.vercel.app

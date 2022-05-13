@@ -2,9 +2,7 @@ import styled from "styled-components"
 
 const ImgGenStyled = styled.div`
     font-family: 'Grape Nuts', cursive;
-    padding: 1px 0 429px;
     color: gold;
-
     h2 {
         font-size: 50px;
         margin: 20px 0;
@@ -24,18 +22,20 @@ const ImgGenStyled = styled.div`
         font-size: 25px;
     }
     img{
-        width: 50%
+        width: 65%
     }
+
     @media (max-width: 1000px){
-
-    }
-
-    @media (max-width: 768px){
-        
+        img{
+            width: 75%
+        }
     }
 
     @media (max-width: 500px){
-        
+        p {
+            font-size: 25px;
+            margin: 0 25px;
+        }
     }
 `
 
