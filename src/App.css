@@ -21,3 +21,9 @@ h1{
   flex-flow: column;
   align-items: center;
 }
+
+@media (max-width: 400px) {
+  h1{
+    font-size: 48px;
+  }
+}

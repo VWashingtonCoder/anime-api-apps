@@ -32,7 +32,7 @@ export default function Home(){
                     Welcome To My Anime Inspired Website
                 </h2>
                 <p>
-                    Come hang out and enjoy a few cool apps made around anime apis. I really love anime so I thought it would be amazing to build a great homage to an amazing art form.
+                    Come enjoy a few cool apps for anime fans!
                 </p>
             </div>
             <div 
@@ -87,7 +87,7 @@ export default function Home(){
                 <div className="info" id="trivia-info">
                     <h3>Anime Trivia</h3>
                     <p>
-                        Come discover some cool trivia facts about some of your favorite shows!
+                        Think you know all there is to know about your favorite series? Come discover some cool trivia facts and see if you really know it all!
                     </p>
                     <button 
                         className="trivia-app" 

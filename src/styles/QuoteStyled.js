@@ -4,12 +4,9 @@ import styled from "styled-components"
 const QuoteStyled = styled.div`
     font-family: 'Cormorant Garamond', serif;
     color: hotpink;
-
-    .quote-header{
-        display: flex;
-        flex-flow: column nowrap;
-        align-items: center;
-    }
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
     
     .quote-header h2{
         font-size: 50px;

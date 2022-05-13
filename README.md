@@ -33,7 +33,10 @@ Anime apps built around anime APIs utilizing create-react-app
 * npm run start_Start site
 
 ## Status
-* needs media viewport editing
+* Needs media viewport editing
+    - Quote App
+    - Image Generator
+    - Trivia Facts
 * Deployed to Vercel
     - anime-api-apps.vercel.app
 
