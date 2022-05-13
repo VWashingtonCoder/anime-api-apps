@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css"
-import { NavLink, Routes, Route, useNavigate } from "react-router-dom"
+import { NavLink, Routes, Route } from "react-router-dom"
 import Home from "./components/Home";
 import Quotes from "./components/Quotes.js"
 import ImgGenerator from "./components/ImgGenerator";

@@ -42,5 +42,3 @@ export const TriviaDisplayStyled = styled.div`
         width: 48%
     }
 `
-
-export default { TriviaListStyled, TriviaDisplayStyled }

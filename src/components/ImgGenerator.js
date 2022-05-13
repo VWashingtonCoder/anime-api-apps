@@ -47,7 +47,7 @@ export function ImgGenerator(props) {
             </div>
 
             <div className='img-container'>
-                <img src={imageURL} alt='Generate An Image!'/>
+                <img src={imageURL} alt='Generated!'/>
             </div>
         </ImgGenStyled>
     )

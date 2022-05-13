@@ -19,6 +19,7 @@ export default function Home(){
                 break;
             case "trivia-app":
                 navigate("/trivia")
+                break;
             default:
                 return appName
         }

@@ -10,7 +10,7 @@ export function Quotes(props) {
 
     useEffect(() => {
         getNewAnimeQuote()
-    }, [])
+    }, [getNewAnimeQuote])
 
     const newQuote = evt => {
         evt.preventDefault()
