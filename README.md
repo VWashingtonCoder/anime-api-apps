@@ -6,11 +6,11 @@ Anime apps built around anime APIs utilizing create-react-app
 - Retrieves random anime quotes from Animechan API (https://animechan.vercel.app/) 
 
 # Image Generator:
-- Generates a random anime image based on one of the ten choices available. 
+- Generates a random anime image based on one of the ten choices available
 - Images provided by  Waifu Pics API (https://waifu.pics/docs)
 
 # Trivia Facts:
-- Generates a list of trivia facts about the chosen anime series.
+- Generates a list of trivia facts about the chosen anime series
 - Facts provided by anime-facts-rest-api (https://chandan-02.github.io/anime-facts-rest-api/)
 
 ### Dependencies
@@ -34,5 +34,9 @@ Anime apps built around anime APIs utilizing create-react-app
 
 ## Status
 * Needs code clean-up
-* Awaiting deployment.
+* Awaiting deployment
+
+## Authors
+* Vincent Washington (Andre)
+    - vincentwashington202@gmail.com
 
