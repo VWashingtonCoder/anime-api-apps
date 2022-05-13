@@ -33,8 +33,8 @@ Anime apps built around anime APIs utilizing create-react-app
 * npm run start_Start site
 
 ## Status
-* Needs code clean-up
-* Awaiting deployment
+* Deployed to Vercel
+    - anime-api-apps.vercel.app
 
 ## Authors
 * Vincent Washington (Andre)
