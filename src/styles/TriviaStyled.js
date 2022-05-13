@@ -22,6 +22,17 @@ export const TriviaListStyled = styled.div`
         margin: 0 250px;
         line-height: 35px;
     }
+    @media (max-width: 1000px){
+
+    }
+
+    @media (max-width: 768px){
+        
+    }
+
+    @media (max-width: 500px){
+        
+    }
 `
 
 export const TriviaDisplayStyled = styled.div`
@@ -40,5 +51,16 @@ export const TriviaDisplayStyled = styled.div`
     }
     img{
         width: 48%
+    }
+    @media (max-width: 1000px){
+
+    }
+
+    @media (max-width: 768px){
+        
+    }
+
+    @media (max-width: 500px){
+        
     }
 `

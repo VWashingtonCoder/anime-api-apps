@@ -26,6 +26,17 @@ const ImgGenStyled = styled.div`
     img{
         width: 50%
     }
+    @media (max-width: 1000px){
+
+    }
+
+    @media (max-width: 768px){
+        
+    }
+
+    @media (max-width: 500px){
+        
+    }
 `
 
 export default ImgGenStyled
