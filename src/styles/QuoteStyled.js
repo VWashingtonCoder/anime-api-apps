@@ -2,7 +2,6 @@ import styled from "styled-components"
 
 
 const QuoteStyled = styled.div`
-    font-family: 'Cormorant Garamond', serif;
     color: hotpink;
     display: flex;
     flex-flow: column nowrap;
@@ -13,7 +12,7 @@ const QuoteStyled = styled.div`
     }
     .quote-header p{
         font-size: 32px;
-        margin: 40px 95px;
+        margin: 40px;
     }
     .quote{
         font-size: 28px;

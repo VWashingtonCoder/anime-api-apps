@@ -1,7 +1,6 @@
 import styled from "styled-components"
 
 const ImgGenStyled = styled.div`
-    font-family: 'Grape Nuts', cursive;
     color: gold;
     h2 {
         font-size: 50px;
@@ -28,6 +27,9 @@ const ImgGenStyled = styled.div`
     @media (max-width: 1000px){
         img{
             width: 75%
+        }
+        p {
+            margin: 0 75px;
         }
     }
 

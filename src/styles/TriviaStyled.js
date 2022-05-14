@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 export const TriviaListStyled = styled.div`
-    font-family: 'Courgette', cursive;
     color: aqua;
     width: 90%;
     display: flex;
@@ -76,7 +75,7 @@ export const TriviaDisplayStyled = styled.div`
         width: 48%
     }
     .top-btn{
-        margin-bottom: 30px;
+        margin: 30px;
     }
     @media (max-width: 1000px){
         .fact-container{
