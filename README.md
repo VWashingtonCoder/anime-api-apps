@@ -32,6 +32,9 @@ Anime apps built around anime APIs utilizing create-react-app
 ### Executing program
 * npm run start_Start site
 
+## Bugs
+* Routes are set up but need reload sometimes when changing routes.
+
 ## Status
 * Deployed to Vercel
     - anime-api-apps.vercel.app
