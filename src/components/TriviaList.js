@@ -84,33 +84,34 @@ export function TriviaList(props) {
         setDisplayList(false)
     }
     
-
-
     return (
         <TriviaListStyled>
             <div className='trivia-header'>
                 <h2>Anime Trivia</h2>
                 <p>
-                    Come discover some cool trivia facts about<br/>some of your favorite shows! 
+                    Come discover some cool trivia facts about some of your favorite shows! 
                 </p>
             </div>
             {displayList ? 
-                <div className='anime-list'>
+                <>
+                    <div className='anime-list'>
+                        {animelist.map(anime => {
+                            return(
+                                <>
+                                    <div
+                                        className='anime-series' 
+                                        key={anime.id}
+                                        id={anime.urlKey}
+                                        onClick={selectShow}
+                                    >
+                                        {anime.name}
+                                    </div>
+                                </>
+                            )
+                        })}
+                    </div>
                     <button onClick={toggleAnimeList}>Hide Anime List</button>
-                    {animelist.map(anime => {
-                        return(
-                            <>
-                                <div 
-                                    key={anime.id}
-                                    id={anime.urlKey}
-                                    onClick={selectShow}
-                                >
-                                    {anime.name}
-                                </div>
-                            </>
-                        )
-                    })}
-                </div>
+                </>
                 : <button onClick={toggleAnimeList}>Display Anime List</button>
             }
             {factNumber === 0 

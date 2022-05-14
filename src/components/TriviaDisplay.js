@@ -5,6 +5,11 @@ import { TriviaDisplayStyled } from "../styles/TriviaStyled";
 export function TriviaDisplay(props){
     const { current, factNumber, showImage, triviaFacts } = props
     
+    const topFunction = () => {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+
     return(
         <TriviaDisplayStyled>
             <div className="display-header"> 
@@ -20,8 +25,9 @@ export function TriviaDisplay(props){
                         )
                     })}
                 </ol>
-                <img src={showImage} alt='anime-show' />
+                <img src={showImage} alt="anime-show" />
             </div>
+            <button className="top-btn" onClick={topFunction}>Back To The Top</button>
         </TriviaDisplayStyled>
     )
     
